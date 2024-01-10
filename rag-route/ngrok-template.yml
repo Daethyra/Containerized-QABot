@@ -1,0 +1,22 @@
+authtoken: 
+connect_timeout: 30s
+console_ui: true
+console_ui_color: transparent
+dns_resolver_ips:
+  - 1.1.1.1
+  - 8.8.8.8
+heartbeat_interval: 1m
+heartbeat_tolerance: 5s
+inspect_db_size: 104857600 # 100mb
+inspect_db_size: 50000000
+log_level: info
+log_format: json
+log: /var/log/ngrok.log
+region: us
+update_channel: stable
+update_check: false
+version: 2
+tunnels:
+  rag_playground:
+    addr: 8080
+    proto: http

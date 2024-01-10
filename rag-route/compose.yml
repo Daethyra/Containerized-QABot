@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+  ngrok:
+    image: ngrok/ngrok
+    restart: unless-stopped
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml
+      - ./start-ngrok.sh:/start-ngrok.sh
+    command: 
+      - /bin/sh
+      - /start-ngrok.sh
+    ports:
+      - "4040:4040"
