@@ -1,6 +1,6 @@
 # Retrieval Augmented Generation | Deployable Question/Answering Chatbot to the Web using Ngrok
 ## Description
-- A containerized RAG AI Chatbot that is pushed to the web via Ngrok.
+- A containerized RAG AI Chatbot that is published to the web via Ngrok.
 This repository contains appropriated code from a LangChain template by Lance Martin <lance@langchain.dev> to alter its purpose for the sake of streamlining the creation of an RAG AI Chatbot for non-technical users.
 
 This repository's purpose is to provide a detailed step-by-step guide to launching your own chatbot to the web without any programming experience required.
